@@ -43,6 +43,8 @@ public abstract class WebSite {
 
     public abstract String getXPath1();
 
+    public abstract String getXPathG();
+
     public abstract String getXPath2();
 }
 

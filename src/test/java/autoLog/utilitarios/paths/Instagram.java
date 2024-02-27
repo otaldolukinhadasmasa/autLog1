@@ -18,11 +18,11 @@ public class Instagram extends WebSite {
 
     @Override
     public String getXPath1() {
-        return "/html/body/div[2]/div/div/div[2]/div/div/div[1]/section/main/div/div/div[1]/div[2]/form/div/div[1]/div/label/input";
+        return "//input[@name='username' and @type='text']";
     }
 
     @Override
     public String getXPath2() {
-        return "/html/body/div[2]/div/div/div[2]/div/div/div[1]/section/main/div/div/div[1]/div[2]/form/div/div[2]/div/label/input";
+        return "//input[@name='password' and @type='password']";
     }
 }

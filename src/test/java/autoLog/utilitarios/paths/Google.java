@@ -77,6 +77,11 @@ public class Google extends WebSite {
     }
 
     @Override
+    public String getXPathG() {
+        return "/html/body/div[1]/div[1]/div[2]/c-wiz/div/div[3]/div/div[1]/div/div/button/span";
+    }
+
+    @Override
     public String getXPath2() {
         return "//input[@type='password']";
     }

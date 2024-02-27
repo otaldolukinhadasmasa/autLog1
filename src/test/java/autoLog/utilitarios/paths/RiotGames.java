@@ -18,12 +18,12 @@ public class RiotGames extends WebSite {
 
     @Override
     public String getXPath1(){
-        return "/html/body/div[2]/div/main/div/form/div/div/div[1]/div[2]/div/input";
+        return "//input[@name='username' and @type='text']";
     }
 
     @Override
     public String getXPath2(){
-        return "/html/body/div[2]/div/main/div/form/div/div/div[1]/div[2]/div/input";
+        return "//input[@name='password' and @type='password']";
     }
 }
 

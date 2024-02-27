@@ -42,7 +42,21 @@ public class Preencher {
             segundaCaixa.click();
             segundaCaixa.sendKeys("senha");
         } else {
-           System.out.println("");
+            navegador.get(site.urlString());
+
+            // primeira caixa
+            WebElement primeiraCaixa = waitUntilElementVisible(By.xpath(site.getXPath1()));
+            primeiraCaixa.click();
+            primeiraCaixa.sendKeys("login");
+
+            // caixa "avancar"
+            WebElement avancarElement = waitUntilElementVisible(By.xpath(site.getXPathG()));
+            avancarElement.click();
+            
+            // segunda caixa
+            WebElement segundaCaixa = waitUntilElementVisible(By.xpath(site.getXPath2()));
+            segundaCaixa.click();
+            segundaCaixa.sendKeys("senha");
         }
     }
 

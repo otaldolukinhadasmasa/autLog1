@@ -17,14 +17,12 @@ public class Facebook extends WebSite{
     }
 
     public String getXPath1(){
-        //return "//input[@email='email']";
-        return "/html/body/div[1]/div[1]/div[1]/div/div[2]/div[2]/form/div/div[1]/input";
+        return "//input[@name='email' and @type='text']";
     }
     
     @Override
     public String getXPath2(){
-        //return "//input[@name='password']";
-        return "/html/body/div[1]/div[1]/div[1]/div/div[2]/div[2]/form/div/div[2]/div/div/input";
+        return "//input[@name='pass' and @type='password']";
     }
     /* 
     @Override
