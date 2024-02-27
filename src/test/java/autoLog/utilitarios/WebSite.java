@@ -46,5 +46,9 @@ public abstract class WebSite {
     public abstract String getXPathG();
 
     public abstract String getXPath2();
+
+    public String getXpathG() {
+        return "";
+    }
 }
 

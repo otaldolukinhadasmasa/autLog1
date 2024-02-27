@@ -5,11 +5,11 @@ import org.openqa.selenium.WebDriver;
 import autoLog.utilitarios.WebSite;
 
 public class Instagram extends WebSite {
-    private final WebDriver navegador;
+    //private final WebDriver navegador;
 
     public Instagram(WebDriver navegador) {
         super("instagram", navegador);
-        this.navegador = navegador;
+        //this.navegador = navegador;
     }
 
     public String urlString() {
@@ -24,5 +24,9 @@ public class Instagram extends WebSite {
     @Override
     public String getXPath2() {
         return "//input[@name='password' and @type='password']";
+    }
+
+    public String getXPathG(){
+        return "";
     }
 }

@@ -47,12 +47,12 @@ public class Preencher {
             // primeira caixa
             WebElement primeiraCaixa = waitUntilElementVisible(By.xpath(site.getXPath1()));
             primeiraCaixa.click();
-            primeiraCaixa.sendKeys("login");
+            primeiraCaixa.sendKeys("lucashenrikjj@gmail.com");
 
             // caixa "avancar"
             WebElement avancarElement = waitUntilElementVisible(By.xpath(site.getXPathG()));
             avancarElement.click();
-            
+
             // segunda caixa
             WebElement segundaCaixa = waitUntilElementVisible(By.xpath(site.getXPath2()));
             segundaCaixa.click();

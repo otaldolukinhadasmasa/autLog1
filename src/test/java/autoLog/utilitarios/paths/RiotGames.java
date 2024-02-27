@@ -5,11 +5,11 @@ import org.openqa.selenium.WebDriver;
 import autoLog.utilitarios.WebSite;
 
 public class RiotGames extends WebSite {
-    private final WebDriver navegador;
+    //private final WebDriver navegador;
 
     public RiotGames(WebDriver navegador) {
         super("riotgames", navegador);
-        this.navegador = navegador;
+        //this.navegador = navegador;
     }
     
     public String urlString(){
@@ -24,6 +24,10 @@ public class RiotGames extends WebSite {
     @Override
     public String getXPath2(){
         return "//input[@name='password' and @type='password']";
+    }
+
+    public String getXPathG(){
+        return ""; 
     }
 }
 

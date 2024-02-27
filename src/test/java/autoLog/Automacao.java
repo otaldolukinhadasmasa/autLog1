@@ -19,6 +19,9 @@ public class Automacao {
         System.out.println("Informe o site:");
         String webSite = sc.nextLine();
 
+        System.out.println();
+        System.out.println("Carregando site...");
+       
          // Create Edge driver
         WebDriver navegador = new EdgeDriver();
         WebSite site = WebSite.createWebsite(webSite, navegador);
