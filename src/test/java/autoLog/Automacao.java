@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 import autoLog.utilitarios.Preencher;
+import autoLog.utilitarios.Preencher2;
 import autoLog.utilitarios.WebSite;
 
 public class Automacao {
@@ -32,11 +33,11 @@ public class Automacao {
             System.out.println("Website não encontrado.");
         }
 
-        String login = "login";
+        String login = "login.getLogin()";
         String senha = "senha";
 
-        Preencher preencher = new Preencher(navegador, site, login, senha, webSite);
-        preencher.preencher();
+        //Preencher preencher = new Preencher(navegador, site, webSite);
+        //preencher.preencher();
 
         sc.close();
     }

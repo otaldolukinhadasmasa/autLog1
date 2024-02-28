@@ -10,8 +10,6 @@ import java.time.Duration;
 
 public class Preencher {
     private String webSite;
-    private String login;
-    private String senha;
     private WebSite site;
     private WebDriver navegador;
 
@@ -19,12 +17,10 @@ public class Preencher {
 
     }
 
-    public Preencher(WebDriver navegador, WebSite site, String login, String senha, String webSite) {
+    public Preencher(WebDriver navegador, WebSite site, String webSite) {
         this.webSite = webSite;
         this.site = site;
         this.navegador = navegador;
-        this.login = login;
-        this.senha = senha;
     }
 
     public void preencher() {
